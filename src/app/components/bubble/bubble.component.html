@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <div style="display: block">
+      <canvas baseChart
+        [datasets]="bubbleChartData"
+        [options]="bubbleChartOptions"
+        [colors]="bubbleChartColors"
+        [legend]="bubbleChartLegend"
+        [chartType]="bubbleChartType"
+        (charHover)="chartHovered($event)"
+        (charClick)="chartClicked($event)"
+        >
+      </canvas>
+    </div>
+    <button class="btn btn-primary btn-block" (click)="randomize()">Randomize</button>
+  </div>
+</div>
